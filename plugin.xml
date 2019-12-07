@@ -3,6 +3,11 @@
     version="1.0.0"
     xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>ScreenshotForbidden</name>
+
+    <!-- 这里加载js模块，该js模块自动屏蔽，并不需要对外暴露js接口-->
+    <js-module name="ScreenshotForbidden" src="www/ScreenshotForbidden.js">
+        <clobbers target="ScreenshotForbidden" />
+    </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="ScreenshotForbidden">
