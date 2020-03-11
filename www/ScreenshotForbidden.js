@@ -5,5 +5,5 @@ document.addEventListener('deviceready', function () {
 }, false);
 
 exports.ScreenshotForbidden = function (arg0, success, error) {
-
+     exec(null, null, 'ScreenshotForbidden', null,null);
 };
